@@ -399,7 +399,7 @@ footer h1 {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 599px) {
     .wrapper {
         display: flex;
         flex-direction: column;
