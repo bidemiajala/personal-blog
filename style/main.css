@@ -212,51 +212,43 @@ h2 {
 
 @media (max-width: 901px) {
     .hero-container {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
-        grid-template-areas: "img" "form";
     }
-    #hero-image {
-        grid-area: img;
-        background-image: url("../images/hero.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 5px;
-    }
-    #hero-form {
+    form {
         display: none;
-        grid-area: form;
-        padding: 5px;
     }
 }
 
 @media (max-width: 320px) {
     .hero-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
-        grid-template-areas: "img" "form";
-    }
-    #hero-image {
-        grid-area: img;
-        background-image: url("../images/hero.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 5px;
-    }
-    #hero-form {
-        display: none;
-        grid-area: form;
-        padding: 5px;
+        width: 100%;
+        column-gap: 0;
     }
     .content-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: 100px;
-        row-gap: 20px;
-        grid-template-areas: "first" "second" "third" "fourth" "fifth" "sixth";
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: none;
+    }
+    .content a {
+        text-decoration: none;
+    }
+    .post {
+        border-radius: 5px;
+        border: 1px solid rgb(206, 206, 206);
+        height: 150px;
+    }
+    .post h2 {
+        font-size: 15px;
+    }
+    .post:hover {
+        box-shadow: none;
+        background-color: none;
+    }
+    footer h1 {
+        color: white;
+        font-size: 20px;
+        height: 40px;
     }
 }
 
