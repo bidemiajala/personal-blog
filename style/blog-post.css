@@ -398,3 +398,111 @@ footer h1 {
         font-size: 20px;
     }
 }
+
+@media (min-device-width: 600px) and (max-device-width: 900px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        height: 30px;
+        text-align: center;
+        padding: 2px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .heading {
+        height: auto;
+        text-align: center;
+        padding: none;
+    }
+    .hero-image {
+        height: 400px;
+        padding: none;
+        border-radius: 5px;
+        background: url(../images/post-4.jpg);
+        background-size: cover;
+        margin: 1px 10px 1px;
+    }
+    .blog-body {
+        padding: none;
+        margin: 3px 5px 3px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: justify;
+    }
+    blockquote {
+        background: #f9f9f9;
+        border-left: 5px solid #ccc;
+        margin: 1.5em 8px;
+        padding: 0.5em 10px;
+        quotes: none;
+    }
+    blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: none;
+        vertical-align: -0.4em;
+    }
+    .writer {
+        gap: 5px;
+        margin: 2px 10px 10px;
+    }
+    .related-divider {
+        display: none;
+    }
+    .related-posts {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        row-gap: 20px;
+    }
+    .post {
+        border-radius: 5px;
+        border: 1px solid rgb(206, 206, 206);
+        height: 250px;
+    }
+    .post h2 {
+        font-size: 18px;
+    }
+    .post:hover {
+        box-shadow: none;
+        background-color: white;
+    }
+    .comment {
+        padding: 5px;
+        margin: 5px;
+    }
+    .comment span {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    input {
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 3px;
+        width: 97%;
+    }
+    input[type=button] {
+        background-color: #ffffff;
+        width: 50%;
+        height: 35px;
+    }
+    textarea {
+        padding: 5px;
+        font-size: 20px;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        width: 97%;
+    }
+    footer h1 {
+        color: white;
+        font-size: 25px;
+    }
+}
