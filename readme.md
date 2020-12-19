@@ -8,4 +8,8 @@
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Credit
+Images are from [Pexels](https://www.pexels.com)
+[Christmas Essay](https://www.thewisdompost.com/essay/christmas-essay/3297)
+
 FEND P1
