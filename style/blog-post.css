@@ -31,7 +31,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.heading {
+nav {
     grid-column: 1 / 3;
     grid-row: 2;
     height: auto;
