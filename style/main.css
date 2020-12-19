@@ -26,7 +26,7 @@ body {
 .hero {
     grid-column: 1 / 4;
     grid-row: 2;
-    height: 500px;
+    height: auto;
 }
 
 .hero-container {
