@@ -4,7 +4,7 @@
 + I used a minimalist-style design to be on the safe side.
 + Please share feedback as you wish
 
-Visit this [link](https://jolly-elion-5f69e1.netlify.app/) for the hosted version
+Visit this [link](https://jolly-elion-5f69e1.netlify.app/) for the hosted version on Netlify
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
