@@ -8,14 +8,36 @@
 header {
     grid-column: 1 / 4;
     grid-row: 1;
-    height: 50px;
+    height: 60px;
     text-align: center;
-    padding: 5px;
+    margin-bottom: 20px;
 }
 
 header a {
     text-decoration: none;
     color: black;
+}
+
+nav {
+    background-color: rgb(189, 189, 189);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
 }
 
 body {
