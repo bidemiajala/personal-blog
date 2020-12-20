@@ -224,15 +224,24 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
     }
+    #hero-image {
+        height: 500px;
+    }
     form {
         display: none;
     }
 }
 
 @media (max-width: 320px) {
+    header {
+        margin-bottom: 40px;
+    }
     .hero-container {
         width: 100%;
         column-gap: 0;
+    }
+    #hero-image {
+        height: 400px;
     }
     .content-container {
         display: flex;
@@ -273,10 +282,14 @@ h2 {
         width: 100%;
         column-gap: 0;
     }
+    #hero-image {
+        height: 450px;
+    }
     header {
         height: 25px;
         text-align: center;
         padding: 2px;
+        margin-bottom: 40px;
     }
     h1 {
         font-size: 30px;
@@ -308,10 +321,14 @@ h2 {
         width: 100%;
         column-gap: 0;
     }
+    #hero-image {
+        height: 500px;
+    }
     header {
         height: 25px;
         text-align: center;
         padding: 2px;
+        margin-bottom: 40px;
     }
     h1 {
         font-size: 30px;

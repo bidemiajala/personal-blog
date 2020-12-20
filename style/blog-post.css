@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@327&display=swap');
+@import 'mobile.css';
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -259,7 +260,7 @@ input {
     padding: 10px;
     color: black;
     font-size: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #CECECE;
     border-radius: 5px;
     font-weight: 300;
     font-family: 'Quicksand', sans-serif;
@@ -280,7 +281,7 @@ input[type=button] {
 textarea {
     padding: 10px;
     font-size: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #CECECE;
     border-radius: 5px;
     font-weight: 300;
     font-family: 'Quicksand', sans-serif;
@@ -304,7 +305,7 @@ footer h1 {
         padding: 10px;
         color: black;
         font-size: 20px;
-        border: 1px solid #000000;
+        border: 1px solid #CECECE;
         border-radius: 5px;
         font-weight: 300;
         font-family: 'Quicksand', sans-serif;
@@ -322,7 +323,7 @@ footer h1 {
     textarea {
         padding: 10px;
         font-size: 20px;
-        border: 1px solid #000000;
+        border: 1px solid #CECECE;
         border-radius: 5px;
         font-weight: 300;
         font-family: 'Quicksand', sans-serif;
@@ -436,7 +437,7 @@ footer h1 {
     textarea {
         padding: 5px;
         font-size: 15px;
-        border: 1px solid #000000;
+        border: 1px solid #CECECE;
         border-radius: 3px;
         width: 95%;
     }
@@ -560,7 +561,7 @@ footer h1 {
     textarea {
         padding: 5px;
         font-size: 15px;
-        border: 1px solid #000000;
+        border: 1px solid #CECECE;
         border-radius: 3px;
         width: 95%;
     }
@@ -675,7 +676,7 @@ footer h1 {
     textarea {
         padding: 5px;
         font-size: 20px;
-        border: 1px solid #000000;
+        border: 1px solid #CECECE;
         border-radius: 3px;
         width: 97%;
     }
