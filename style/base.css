@@ -1,0 +1,570 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+}
+
+header {
+    grid-column: 1 / 4;
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    grid-column: 1 / 4;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(189, 189, 189);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    grid-column: 1 / 4;
+    grid-row: 9;
+}
+
+footer h1 {
+    color: white;
+}
+
+h2 {
+    color: #2c3335;
+}
+
+.feature-image {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    height: 550px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 80px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-body {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    height: auto;
+    padding: 5px;
+    margin: 10px 40px 2px;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: justify;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+@media (max-width: 901px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+    #hero-image {
+        height: 500px;
+    }
+    #hero-form form {
+        display: none;
+    }
+    .comment input {
+        padding: 10px;
+        color: black;
+        font-size: 20px;
+        border: 1px solid #CECECE;
+        border-radius: 5px;
+        font-weight: 300;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .comment input[type=button]:hover {
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+    }
+    .comment input[type=button] {
+        background-color: #ffffff;
+        width: 50%;
+    }
+    .comment textarea {
+        padding: 10px;
+        font-size: 20px;
+        border: 1px solid #CECECE;
+        border-radius: 5px;
+        font-weight: 300;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        height: 25px;
+        text-align: center;
+        padding: 2px;
+        margin-bottom: 40px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .heading {
+        height: auto;
+        text-align: center;
+        padding: none;
+    }
+    .hero-image {
+        height: 400px;
+        padding: none;
+        border-radius: 5px;
+        margin: 1px 10px 1px;
+    }
+    .blog-body {
+        padding: none;
+        margin: 3px 5px 3px;
+        font-size: 15px;
+        line-height: 23px;
+        text-align: none;
+    }
+    blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: none;
+    }
+    blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: none;
+        vertical-align: -0.4em;
+    }
+    blockquote p {
+        display: inline;
+    }
+    .content-footer {
+        gap: 5px;
+        margin: 0px 3px 10px;
+    }
+    .avatar {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background: url(../images/kanye.jpg);
+    }
+    .related-divider {
+        display: none;
+    }
+    .related-posts {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        row-gap: 20px;
+    }
+    .post-item {
+        border-radius: 5px;
+        border: 1px solid rgb(206, 206, 206);
+        height: 150px;
+    }
+    .post-item h2 {
+        font-size: 15px;
+    }
+    .post-item:hover {
+        box-shadow: none;
+        background-color: none;
+    }
+    .comment {
+        padding: 2px;
+        margin: 5px;
+    }
+    .comment span {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .comment input {
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 3px;
+        width: 95%;
+    }
+    .comment input[type=button] {
+        background-color: #ffffff;
+        width: 50%;
+        height: 35px;
+    }
+    .comment textarea {
+        padding: 5px;
+        font-size: 15px;
+        border: 1px solid #CECECE;
+        border-radius: 3px;
+        width: 95%;
+    }
+    footer h1 {
+        color: white;
+        font-size: 20px;
+    }
+    .content-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .writer-info {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .hero-container {
+        width: 100%;
+        column-gap: 0;
+    }
+    #hero-image {
+        height: 400px;
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        gap: none;
+    }
+    .content a {
+        text-decoration: none;
+    }
+    .post {
+        border-radius: 5px;
+        border: 1px solid rgb(206, 206, 206);
+        height: 150px;
+        width: 300px;
+    }
+    .post h2 {
+        font-size: 15px;
+    }
+    .post:hover {
+        box-shadow: none;
+        background-color: none;
+    }
+}
+
+@media (max-width: 599px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-container {
+        width: 100%;
+        column-gap: 0;
+    }
+    #hero-image {
+        height: 450px;
+    }
+    header {
+        height: 25px;
+        text-align: center;
+        padding: 2px;
+        margin-bottom: 40px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .post {
+        border-radius: 5px;
+        border: none;
+        height: 200px;
+    }
+    .post h2 {
+        font-size: 15px;
+    }
+    .post:hover {
+        box-shadow: none;
+        background-color: rgb(213, 213, 213);
+        color: white;
+    }
+    .heading {
+        height: auto;
+        text-align: center;
+        padding: none;
+    }
+    .hero-image {
+        height: 400px;
+        padding: none;
+        border-radius: 5px;
+        margin: 1px 10px 1px;
+    }
+    .blog-body {
+        padding: none;
+        margin: 3px 5px 3px;
+        font-size: 15px;
+        line-height: 23px;
+        text-align: none;
+    }
+    blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: none;
+    }
+    blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: none;
+        vertical-align: -0.4em;
+    }
+    blockquote p {
+        display: inline;
+    }
+    .content-footer {
+        gap: 5px;
+        margin: 0px 3px 10px;
+    }
+    .avatar {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background: url(../images/kanye.jpg);
+    }
+    .related-divider {
+        display: none;
+    }
+    .related-posts {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        row-gap: 20px;
+    }
+    .post-item {
+        border-radius: 5px;
+        border: 1px solid rgb(206, 206, 206);
+        height: 150px;
+    }
+    .post-item h2 {
+        font-size: 15px;
+    }
+    .post-item:hover {
+        box-shadow: none;
+        background-color: none;
+    }
+    .comment {
+        padding: 2px;
+        margin: 5px;
+    }
+    .comment span {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .comment input {
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 3px;
+        width: 95%;
+    }
+    .comment input[type=button] {
+        background-color: #ffffff;
+        width: 50%;
+        height: 35px;
+    }
+    .comment textarea {
+        padding: 5px;
+        font-size: 15px;
+        border: 1px solid #CECECE;
+        border-radius: 3px;
+        width: 95%;
+    }
+    .content-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .writer-info {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (min-device-width: 600px) and (max-device-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-container {
+        width: 100%;
+        column-gap: 0;
+    }
+    #hero-image {
+        height: 500px;
+    }
+    header {
+        height: 25px;
+        text-align: center;
+        padding: 2px;
+        margin-bottom: 40px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .post {
+        border-radius: 5px;
+        border: none;
+        height: 200px;
+    }
+    .post h2 {
+        font-size: 15px;
+    }
+    .post:hover {
+        box-shadow: none;
+        background-color: rgb(213, 213, 213);
+        color: white;
+    }
+    .heading {
+        height: auto;
+        text-align: center;
+        padding: none;
+    }
+    .hero-image {
+        height: 400px;
+        padding: none;
+        border-radius: 5px;
+        margin: 1px 10px 1px;
+    }
+    .blog-body {
+        padding: none;
+        margin: 3px 5px 3px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: justify;
+    }
+    blockquote {
+        background: #f9f9f9;
+        border-left: 5px solid #ccc;
+        margin: 1.5em 8px;
+        padding: 0.5em 10px;
+        quotes: none;
+    }
+    blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: none;
+        vertical-align: -0.4em;
+    }
+    .content-footer {
+        gap: 5px;
+        margin: 2px 10px 10px;
+    }
+    .related-divider {
+        display: none;
+    }
+    .related-posts {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        row-gap: 20px;
+    }
+    .post-item {
+        border-radius: 5px;
+        border: 1px solid rgb(206, 206, 206);
+        height: 250px;
+    }
+    .post-item h2 {
+        font-size: 18px;
+    }
+    .post-item:hover {
+        box-shadow: none;
+        background-color: white;
+    }
+    .comment {
+        padding: 5px;
+        margin: 5px;
+    }
+    .comment span {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .comment input {
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 3px;
+        width: 97%;
+    }
+    .comment input[type=button] {
+        background-color: #ffffff;
+        width: 50%;
+        height: 35px;
+    }
+    .comment textarea {
+        padding: 5px;
+        font-size: 20px;
+        border: 1px solid #CECECE;
+        border-radius: 3px;
+        width: 97%;
+    }
+}
