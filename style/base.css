@@ -180,12 +180,8 @@ blockquote p {
         border-radius: 5px;
         margin: 1px 10px 1px;
     }
-    .blog-body {
-        padding: none;
-        margin: 3px 5px 3px;
-        font-size: 15px;
-        line-height: 23px;
-        text-align: none;
+    .feature-image {
+        height: 300px;
     }
     blockquote {
         background: #f9f9f9;
