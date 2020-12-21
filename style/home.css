@@ -1,0 +1,155 @@
+.hero {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    height: auto;
+    margin-top: 30px;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    grid-template-areas: "img img form";
+}
+
+#hero-image {
+    grid-area: img;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#hero-form {
+    grid-area: form;
+    padding: 5px;
+}
+
+.content-container {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas: "head head head" "first second third" "fourth fifth sixth";
+    align-items: start;
+    height: auto;
+}
+
+#first-blog {
+    grid-area: first;
+}
+
+#second-blog {
+    grid-area: second;
+}
+
+#third-blog {
+    grid-area: third;
+}
+
+#fourth-blog {
+    grid-area: fourth;
+}
+
+#fifth-blog {
+    grid-area: fifth;
+}
+
+#sixth-blog {
+    grid-area: sixth;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "pic" "pic" "pic" "desc";
+    border-radius: 5px;
+}
+
+.blog-description {
+    grid-area: desc;
+    text-align: center;
+}
+
+.blog-image {
+    grid-area: pic;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#first-image {
+    background: url(../images/post-1.jpg);
+    background-size: cover;
+}
+
+#second-image {
+    background: url(../images/post-2.jpg);
+    background-size: cover;
+}
+
+#third-image {
+    background: url(../images/post-3.jpg);
+    background-size: cover;
+}
+
+#fourth-image {
+    background: url(../images/post-4.jpg);
+    background-size: cover;
+}
+
+#fifth-image {
+    background: url(../images/post-5.jpg);
+    background-size: cover;
+}
+
+#sixth-image {
+    background: url(../images/post-6.jpg);
+    background-size: cover;
+}
+
+#hero-form form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#hero-form input {
+    height: 60px;
+    margin-bottom: 7px;
+    padding: 5px;
+    color: black;
+    font-size: 25px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#hero-form input[type=button]:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+#hero-form input[type=button] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.post {
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+}
+
+.content-container a {
+    text-decoration: none;
+}
+
+.post:hover {
+    box-shadow: 5px 5px 5px rgb(211, 211, 211);
+    background-color: rgb(213, 213, 213);
+    color: white;
+}
